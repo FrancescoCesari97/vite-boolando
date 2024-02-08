@@ -19,9 +19,9 @@ export default{
 
 
 <template>
-    
+
     <main>
-        AppMain
+        
     </main>
 
 </template>

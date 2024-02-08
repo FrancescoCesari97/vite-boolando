@@ -20,7 +20,7 @@ export default{
 
 <template>
     <footer>
-        AppFooter
+    
         
     </footer>   
 </template>
