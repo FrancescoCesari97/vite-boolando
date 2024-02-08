@@ -72,17 +72,11 @@ header{
     height: 80px;
     background-color:#ff6900 ;
     color:aliceblue ;
+    
 }
 
 .container{
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     ul{
         li{
 

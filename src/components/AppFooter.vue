@@ -20,6 +20,9 @@ export default{
 
 <template>
     <footer>
+        <div class="container">
+            
+        </div>
     
         
     </footer>   
@@ -29,7 +32,14 @@ export default{
 
 
 
-<style>
+<style lang="scss" scoped>
+
+footer{
+    background-color: black;
+    height: 80px;
+
+
+}
 
 
 </style>
