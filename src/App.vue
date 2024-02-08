@@ -24,7 +24,7 @@ export default{
 
 
   <app-main>
-    <h1>{{ title }}</h1>
+    
   </app-main>
 
 
@@ -35,6 +35,8 @@ export default{
 
 
 
-<style >
+<style lang="scss">
+  @use './styles/genral.scss'
 
+ 
 </style>
