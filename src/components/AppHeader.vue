@@ -41,7 +41,7 @@ export default{
         <div class="container">
             <ul>
               <li v-for="link in linksGenere" :class="link.current ? 'active' : ''">
-                  <a href="">{{ link.genere }}</a>
+                  <a :href="link.url">{{ link.genere }}</a>
                   
               </li>
             </ul>

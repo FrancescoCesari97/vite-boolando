@@ -3,6 +3,9 @@
 
 <script >
 
+import AppCard from './AppCard.vue';
+
+
 export default{
   data(){
     return{
@@ -13,6 +16,8 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
         {
             img: '/img/2.webp',
@@ -20,6 +25,8 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
         {
             img: '/img/3.webp',
@@ -27,6 +34,8 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
         {
             img: '/img/4.webp',
@@ -34,6 +43,8 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
         {
             img: '/img/5.webp',
@@ -41,6 +52,8 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
         {
             img: '/img/6.webp',
@@ -48,12 +61,14 @@ export default{
             name: 'RELAZED FIT TEE UNISEX',
             price:'14.99 $',
             oldprice: '30.00 $',
+            sconto: '50%',
+            isInFavorites: true,
         },
      ]
     }
   },
 
- 
+  components: {AppCard},
 };
 </script>
 
@@ -65,7 +80,7 @@ export default{
 
     <main>
         <div class="container">
-            <div class="card" v-for="product in products">
+            <!-- <div class="card" v-for="product in products">
                 <img :src="product.img" alt="">
                 <div class="descrizione">
                     <p>{{ product.brand }}</p>
@@ -76,8 +91,27 @@ export default{
 
                     </div>
                     
+                    
                 </div>
-            </div>
+                <div class="sconto">
+                    <span>{{product.sconto}}</span>
+                    <span>sostenibilità</span>
+
+                    <div class="cuore">
+                    <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div> -->
+
+            <app-card 
+            v-for="product in products"
+            :img="product.img" 
+            :brand="product.brand" 
+            :name="product.name"
+            :price="product.price"
+            :oldprice="product.oldprice"
+            :sconto="product.sconto"
+            />
         </div>
         
     </main>
@@ -100,6 +134,20 @@ flex-wrap: wrap;
    
     width: 30%;
     margin: 20px 0;
+    position: relative;
+    .sconto{
+        position: absolute;
+        bottom: 150px;
+        color: aliceblue;
+        span:nth-child(1){
+            background-color: red;
+            padding: 3px;
+        }
+        span:nth-child(2){
+            background-color: green;
+            padding: 3px;
+        }
+    }
     .descrizione{
         padding: 10px;
         
