@@ -8,7 +8,7 @@
             price: String,
             oldprice: String,
             sconto: String,
-           
+            cuore: String,
         },
     };
 </script>
@@ -36,7 +36,7 @@
         <span>sostenibilità</span>
     </div>
     <div class="cuore">
-        <i class="fa-solid fa-heart"></i>
+        <i :class=" cuore "></i>
     </div>
  </div>
 </template>

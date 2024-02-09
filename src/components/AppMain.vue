@@ -18,6 +18,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
         {
             img: '/img/2.webp',
@@ -27,6 +28,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
         {
             img: '/img/3.webp',
@@ -36,6 +38,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
         {
             img: '/img/4.webp',
@@ -45,6 +48,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
         {
             img: '/img/5.webp',
@@ -54,6 +58,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
         {
             img: '/img/6.webp',
@@ -63,6 +68,7 @@ export default{
             oldprice: '30.00 $',
             sconto: '50%',
             isInFavorites: true,
+            cuore: 'fa-solid fa-heart',
         },
      ]
     }
@@ -111,6 +117,7 @@ export default{
             :price="product.price"
             :oldprice="product.oldprice"
             :sconto="product.sconto"
+            :cuore="product.cuore"
             />
         </div>
         
