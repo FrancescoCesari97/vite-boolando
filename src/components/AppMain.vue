@@ -4,7 +4,7 @@
 <script >
 
 import AppCard from './AppCard.vue';
-
+import axios from 'axios';
 
 export default{
   data(){
@@ -15,7 +15,11 @@ export default{
 
 
   created(){
-    axios
+    axios.get('http://localhost:3000/products').then((res) => {
+        console.log(res.data);
+
+        this.products = res.data;
+    })
   },
 
 
