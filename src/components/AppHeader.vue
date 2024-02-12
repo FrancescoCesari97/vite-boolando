@@ -3,30 +3,20 @@
 
 <script >
 
+import {store} from '../store'
+
 export default{
+ 
   data(){
     return{
-     linksGenere:[{
-        genere: 'Uomo',
-        current: false,
-        url: '#',
-     },
-
-        {
-        genere: 'Donna',
-        current: true,
-        url: '#',
-    },
-
-       {  
-        genere: 'Bambino',
-        current: false,
-        url: '#',
-       },
-     ]
+     store
     }
   },
 
+  props:{
+    HeaderlinksGenere: Array
+  },
+  
  
 };
 </script>
@@ -40,11 +30,13 @@ export default{
     <header>
         <div class="container">
             <ul>
-              <li v-for="link in linksGenere" :class="link.current ? 'active' : ''">
+              <li v-for="link in HeaderlinksGenere" :class="link.current ? 'active' : ''">
                   <a :href="link.url">{{ link.genere }}</a>
                   
               </li>
             </ul>
+
+            
 
             <img src="/img/boolean-logo.png" alt="">
 

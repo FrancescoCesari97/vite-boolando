@@ -3,13 +3,19 @@
 
 <script >
 
+import {store} from '../store'
+
 export default{
   data(){
     return{
-     
+     store
     }
   },
 
+
+  created(){
+
+  },
  
 };
 </script>
@@ -23,7 +29,7 @@ export default{
         <div class="container">
             <div class="info">
 
-            <p>Boolando s.r.l</p>
+            <p>{{ store.test }}</p>
             <p>informazioni legali   informativa sulla privacy   Diritto al recesso </p>
             </div>
 

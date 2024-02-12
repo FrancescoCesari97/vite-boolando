@@ -7,7 +7,27 @@ import AppFooter from './components/AppFooter.vue';
 export default{
   data(){
     return{
-      title:'Booleando'
+      title:'Booleando',
+
+      HeaderlinksGenere:[{
+        genere: 'Uomo',
+        current: false,
+        url: '#',
+     },
+
+        {
+        genere: 'Donna',
+        current: true,
+        url: '#',
+    },
+
+       {  
+        genere: 'Bambino',
+        current: false,
+        url: '#',
+       },
+     ],
+
     }
   },
 
@@ -20,7 +40,7 @@ export default{
 
 <template>
 
-  <app-header></app-header>
+  <app-header :HeaderlinksGenere="HeaderlinksGenere"></app-header>
 
 
   <app-main>
