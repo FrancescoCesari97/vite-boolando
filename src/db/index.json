@@ -1,3 +1,70 @@
- {
-    
- }
+{
+  "products": [
+    {
+      "id": "1",
+      "img": "/img/1.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    },
+    {
+      "id": "2",
+      "img": "/img/2.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    },
+    {
+      "id": "3",
+      "img": "/img/3.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    },
+    {
+      "id": "4",
+      "img": "/img/4.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    },
+    {
+      "id": "5",
+      "img": "/img/5.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    },
+    {
+      "id": "6",
+      "img": "/img/6.webp",
+      "brand": "levis",
+      "name": "RELAZED FIT TEE UNISEX",
+      "price": "14.99 $",
+      "oldprice": "30.00 $",
+      "sconto": "50%",
+      "isInFavorites": true,
+      "cuore": "fa-solid fa-heart"
+    }
+  ]
+}

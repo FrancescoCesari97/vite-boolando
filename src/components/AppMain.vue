@@ -9,70 +9,15 @@ import AppCard from './AppCard.vue';
 export default{
   data(){
     return{
-     products:[
-        {
-            img: '/img/1.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-        {
-            img: '/img/2.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-        {
-            img: '/img/3.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-        {
-            img: '/img/4.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-        {
-            img: '/img/5.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-        {
-            img: '/img/6.webp',
-            brand: 'levis',
-            name: 'RELAZED FIT TEE UNISEX',
-            price:'14.99 $',
-            oldprice: '30.00 $',
-            sconto: '50%',
-            isInFavorites: true,
-            cuore: 'fa-solid fa-heart',
-        },
-     ]
+     products:[],
     }
   },
+
+
+  created(){
+    axios
+  },
+
 
   components: {AppCard},
 };
