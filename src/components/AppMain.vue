@@ -21,11 +21,11 @@ export default{
   },
 
 
- 
-
-
+  
+  
+  
   components: {AppCard, AppModal},
-
+  
   created(){
     axios.get(`${store.apiUri}/products`).then((res) => {
         console.log(res.data);
@@ -33,6 +33,13 @@ export default{
         this.products = res.data;
     });
   },
+
+  methods:{
+    modalOpen(){
+      store.modal.show = true;
+    }
+
+  }
 };
 </script>
 
@@ -69,6 +76,7 @@ export default{
 
             <app-card 
             v-for="product in products"
+            @card-show="modalOpen"
             :img="product.img" 
             :brand="product.brand" 
             :name="product.name"

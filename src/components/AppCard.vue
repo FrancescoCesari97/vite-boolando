@@ -10,6 +10,8 @@
             sconto: String,
             cuore: String,
         },
+
+        emits: ['card-show'],
     };
 </script>
 
@@ -18,7 +20,7 @@
 
 
 <template>
- <div class="card" >
+ <div class="card" @click="$emit('card-show')">
     <img :src="img" alt="">
     <div class="descrizione">
         <p>{{ brand }}</p>

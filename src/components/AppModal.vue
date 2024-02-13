@@ -1,12 +1,21 @@
 <script >
+import { store } from '../store';
+
 
 
 
 export default{
   data(){
     return{ 
+        store
+    };
+
+},
+    methods: {
+        closeModal(){
+            store.modal.show = false;
+        }
     }
-  },
 
 };
 </script>
@@ -19,7 +28,7 @@ export default{
         
 
         <div class="riquandro">
-            <i class="chiusura fa-solid fa-x"></i>
+            <i class="chiusura fa-solid fa-x" @click="closeModal()"></i>
             <p>lorem</p>
             
 
@@ -45,6 +54,7 @@ export default{
         position: absolute;
         top: 10px;
         right: 10px;
+        cursor: pointer;
     }
    
 }
