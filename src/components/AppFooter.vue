@@ -27,7 +27,7 @@ export default{
 <template>
     <footer>
         <div class="container">
-            <div class="info">
+            <div class="info">""
 
             <p>{{ store.test }}</p>
             <p>informazioni legali   informativa sulla privacy   Diritto al recesso </p>
