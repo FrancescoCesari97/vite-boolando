@@ -37,7 +37,7 @@ export default{
 
 
   
-  components: {AppHeader, AppMain, AppFooter },
+  components: {AppHeader, AppMain, AppFooter, },
 
 
   

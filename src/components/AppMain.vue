@@ -4,6 +4,8 @@
 <script >
 
 import AppCard from './AppCard.vue';
+import AppModal from './AppModal.vue'
+
 
 import {store} from '../store';
 import axios from 'axios';
@@ -22,7 +24,7 @@ export default{
  
 
 
-  components: {AppCard},
+  components: {AppCard, AppModal},
 
   created(){
     axios.get(`${store.apiUri}/products`).then((res) => {
@@ -75,6 +77,8 @@ export default{
             :sconto="product.sconto"
             :cuore="product.cuore"
             />
+
+            <app-modal v-if="store.modal.show"/>
         </div>
         
     </main>
