@@ -9,6 +9,7 @@
             oldprice: String,
             sconto: String,
             cuore: String,
+            index: Number,
         },
 
         emits: ['card-show'],
@@ -20,7 +21,7 @@
 
 
 <template>
- <div class="card" @click="$emit('card-show')">
+ <div class="card" @click="$emit('card-show', this.index)">
     <img :src="img" alt="">
     <div class="descrizione">
         <p>{{ brand }}</p>

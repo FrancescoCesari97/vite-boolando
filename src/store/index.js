@@ -6,5 +6,7 @@ export const store = reactive({
 
   modal: {
     show: true,
+    marca: "",
+    nome: "",
   },
 });

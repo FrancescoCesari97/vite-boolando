@@ -21,8 +21,8 @@ export default{
   },
 
 
-  
-  
+
+   
   
   components: {AppCard, AppModal},
   
@@ -35,8 +35,20 @@ export default{
   },
 
   methods:{
-    modalOpen(){
-      store.modal.show = true;
+    modalOpen(index){
+        alert(this.products[index]);
+        
+        const selectedProduct = this.products[index];
+       if(selectedProduct){
+
+           store.modal.marca = selectedProduct.brand;
+           store.modal.nome = selectedProduct.name;
+           store.modal.prezzo = selectedProduct.price;
+           store.modal.immagine = selectedProduct.img;
+
+           
+           store.modal.show = true;
+        }  
     }
 
   }
@@ -75,7 +87,7 @@ export default{
             </div> -->
 
             <app-card 
-            v-for="product in products"
+            v-for="(product, index) in products"
             @card-show="modalOpen"
             :img="product.img" 
             :brand="product.brand" 
@@ -84,6 +96,7 @@ export default{
             :oldprice="product.oldprice"
             :sconto="product.sconto"
             :cuore="product.cuore"
+            :index="index"
             />
 
             <app-modal v-if="store.modal.show"/>

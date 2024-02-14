@@ -10,10 +10,14 @@ export default{
         store
     };
 
-},
+    },
     methods: {
         closeModal(){
             store.modal.show = false;
+            store.modal.marca = '';
+            store.modal.nome = '';
+            store.modal.prezzo = '';
+            store.modal.immagine = '';
         }
     }
 
@@ -29,8 +33,10 @@ export default{
 
         <div class="riquandro">
             <i class="chiusura fa-solid fa-x" @click="closeModal()"></i>
-            <p>lorem</p>
-            
+            <img :src="store.modal.immagine" alt="">
+            <p>{{  store.modal.nome }}</p>
+            <p>{{  store.modal.marca }}</p>
+            <p>{{ store.modal.prezzo }}</p>
 
         </div>
     </div>
